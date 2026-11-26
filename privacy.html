@@ -31,7 +31,7 @@ goes and how to delete it. Last updated: 25 November 2026.</p>
 <h2>Where the data goes</h2>
 <p><b>Location and car data stay in the car.</b> They are stored only in the app's own storage on the car's
 infotainment system. The app has no account of its own, no analytics, no advertising and no server; it does not send trips,
-locations or car data anywhere except where you choose below.</p>
+locations or car data anywhere except as described below.</p>
 <p>Only when you ask for it:</p>
 <ul>
   <li><b>Export</b>: you can save a trip as a GPX or CSV file in the car's Downloads folder, or open a download page
@@ -53,6 +53,13 @@ locations or car data anywhere except where you choose below.</p>
   <li><b>Map background</b> (off by default): if you choose a map in Settings, the car downloads map images of the
     area you are looking at from OpenStreetMap's tile servers. Those servers see which map area
     is requested and the car's IP address, as with any website; they do not receive your trips or any car data.</li>
+</ul>
+<p>On unless you switch it off (Settings &gt; Places &gt; Look up street names):</p>
+<ul>
+  <li><b>Street names for trips</b>: for trips that have no address (those the app recorded itself, which have only
+    GPS coordinates), the car app and the phone app ask Android's address lookup, provided by Google, for the street
+    address at the trip's start and end points. Google receives those coordinates, as when any app shows an address
+    for a place; no other trip or car data is sent. Each point is looked up once and the names are kept on the device.</li>
 </ul>
 </section>
 
