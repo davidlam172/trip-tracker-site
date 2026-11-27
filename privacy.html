@@ -15,7 +15,7 @@
 <body>
 <h1>Trip Tracker – Privacy policy</h1>
 <p><a href="./">Trip Tracker</a> is a trip log for cars with Android Automotive OS, with a companion phone app. This page explains what it reads, where that data
-goes and how to delete it. Last updated: 25 November 2026.</p>
+goes and how to delete it. Last updated: 26 November 2026.</p>
 
 <section>
 <h2>What the app reads</h2>
@@ -59,7 +59,8 @@ locations or car data anywhere except as described below.</p>
   <li><b>Street names for trips</b>: for trips that have no address (those the app recorded itself, which have only
     GPS coordinates), the car app and the phone app ask Android's address lookup, provided by Google, for the street
     address at the trip's start and end points. Google receives those coordinates, as when any app shows an address
-    for a place; no other trip or car data is sent. Each point is looked up once and the names are kept on the device.</li>
+    for a place; no other trip or car data is sent. Each point is looked up once and the names are kept on the device.
+    The phone app does the same for the start and end of its outings (see below).</li>
 </ul>
 </section>
 
@@ -71,17 +72,25 @@ deletes all of its data. The app is excluded from Android's cloud backup.</p>
 
 <section>
 <h2>The phone app</h2>
-<p>The phone app has no data of its own. When you sign in with a Google account, it downloads the backup the car made
-in that account's Drive and shows it on the phone. It asks Google for the same limited access as the car (its own
-files and the e-mail address). Removing the account in the app removes the downloaded copy's source; uninstalling the
-app deletes the copy on the phone.</p>
+<p>When you sign in with a Google account, the phone app downloads the backup the car made in that account's Drive and
+shows it on the phone. It asks Google for the same limited access as the car (its own files and the e-mail address).
+Removing the account in the app removes the downloaded copy's source; uninstalling the app deletes the copy on the
+phone.</p>
+<p><b>Outings (On foot)</b>: when you start an outing, or if you choose to have outings recorded by themselves
+(Settings &gt; On foot), the phone app records the phone's own GPS position (with altitude, accuracy and speed) until
+the outing ends. From it the app shows the route, distance, speed and elevation, and estimates the type of outing
+(walk, run, bike ride, vehicle), the steps and the calories, using the body weight and height you enter. All of this
+is stored only on the phone: it is not sent to the developer, to the car or to Google Drive, apart from the street-name
+lookup described above. While it records, or watches for an outing, the phone shows a notification. Delete an outing
+on its own screen; uninstalling the app deletes them all.</p>
 </section>
 
 <section>
 <h2>Permissions</h2>
-<p>Location (including "all the time", for recording without opening the app), the car's speed and energy values,
-notifications (the quiet notice that recording is ready), and network access (only for the optional map and the local
-download page).</p>
+<p>Car app: location (including "all the time", for recording without opening the app), the car's speed and energy
+values, notifications (the quiet notice that recording is ready), and network access (only for the optional map and
+the local download page). Phone app: network access (the backup, the optional map, street names), and for outings the
+phone's precise location while the app is in use or its notification shows, and notifications.</p>
 </section>
 
 <section>
